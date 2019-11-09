@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-    if self.invalid?
+    if @side1 == 0
       begin
       raise TriangleError 
       rescue TriangleError => error
