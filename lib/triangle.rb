@@ -20,8 +20,17 @@ class Triangle
     elsif side1 == side2 || side1 == side3 || side2 == side3
       :isosceles
     else
-      
+      :scalene
     end
+  end
+  
+    class TriangleError < StandardError
+      def message
+        "This is not a valid triangle."
+      end
+    end
+  
+  
     
   def invalid?
     if side1 == 0 || side2 == 0 || side3 == 0
@@ -32,15 +41,5 @@ class Triangle
       false
     end
   end
-  
-  end
-  
-  
-  
-  
-  
-  
-  
-  
   
 end
