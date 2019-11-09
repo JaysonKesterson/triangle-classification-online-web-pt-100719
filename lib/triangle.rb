@@ -9,7 +9,15 @@ class Triangle
   end
   
   def kind
+    if 
+      
+    elsif
     
+    elsif
+    
+    else
+      
+    end
   end
   
   
